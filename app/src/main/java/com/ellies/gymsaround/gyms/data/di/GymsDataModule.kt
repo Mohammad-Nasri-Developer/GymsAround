@@ -33,7 +33,8 @@ object GymsDataModule {
            .addConverterFactory(
                GsonConverterFactory.create()
            )
-           .baseUrl("")/*TODO: ENTER YOUR BASE URL in baseUrl("")*/
+           .baseUrl(
+                   "https://gymsaround-default-rtdb.asia-southeast1.firebasedatabase.app/")/*TODO: ENTER YOUR BASE URL in baseUrl("")*/
            .build()
     }
 
