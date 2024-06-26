@@ -24,6 +24,7 @@ class GymsViewModelTest {
     private val dispatcher = StandardTestDispatcher()
     private val scope = TestScope(dispatcher)
 
+    // this test is to check that the start the state should be loading
     @Test
     fun loadingState_isSetCorrectly() = scope.runTest {
         val viewModel = getViewModel()

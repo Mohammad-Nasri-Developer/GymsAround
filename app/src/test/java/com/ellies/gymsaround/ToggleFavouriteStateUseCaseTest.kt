@@ -24,7 +24,7 @@ class ToggleFavouriteStateUseCaseTest {
         val useCaseUnderTest = ToggleFavouriteStateUseCase(gymsRepo, getSortedGymsUseCase)
 
         gymsRepo.loadGyms()
-        advanceUntilIdle()
+        advanceUntilIdle() // if there is any suspending function wait it to finish
 
         val gyms = DummyGymsList.getDomainDummyGymsList()
         val gymUnderTest = gyms[0]

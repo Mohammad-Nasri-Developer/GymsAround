@@ -9,7 +9,7 @@ import kotlinx.coroutines.Dispatchers
 import javax.inject.Qualifier
 
 @Qualifier
-@Retention(AnnotationRetention.BINARY)
+@Retention(AnnotationRetention.BINARY)   // this just to select the store of the annotation
 annotation class MainDispatcher
 
 @Qualifier
